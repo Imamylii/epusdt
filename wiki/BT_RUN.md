@@ -2,7 +2,7 @@
 本教程基于`宝塔`操作面板演示`Epusdt`如何运行，如果你未使用`宝塔`面板和有更强的服务器运维基础相信你也能根据教程的一些操作找到灵感！     
 
 ## 准备工作
-- 请确保已经安装并启动了`Mysql`和`redis`、`Supervisord`服务
+- 请确保已经安装并启动了`Mysql`和`redis`、`Supervisord`服务（Supervisord在宝塔面板搜索 “进程守护管理器”  ）
 - 准备一个`telgeram`机器人🤖（用于操作你的钱包和接收交易通知），申请教程参考：[https://w37fhy.cn/2364.html](https://w37fhy.cn/2364.html)
 - 准备一个收银台域名，并完成解析(例如：`upay.dujiaoka.com`)。用于支付请求发起和扫码页面
 
