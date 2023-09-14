@@ -79,7 +79,7 @@ create index wallet_address_token_index
 3.编辑`.env`文件，填入你的配置     
 ```dotenv
 app_name=epusdt
-#下面配置你的域名，收银台会需要
+#下面配置你的域名，收银台会需要。------------必填！！！！-------------
 app_uri=https://upay.dujiaoka.com
 #是否开启debug，默认false
 app_debug=false
@@ -97,7 +97,7 @@ log_max_size=32
 log_max_age=7
 max_backups=3
 
-# mysql配置
+# mysql配置 ，mysal账号密码，------------必填！！！！-------------
 mysql_host=127.0.0.1
 mysql_port=3306
 mysql_user=mysql账号
@@ -123,20 +123,20 @@ queue_level_critical=6
 queue_level_default=3
 queue_level_low=1
 
-#机器人Apitoken
+#机器人Apitoken，参考：https://w37fhy.cn/2364.html 建立一个机器人，token一般是由一串数字，冒号。字符串------------必填！！！！-------------
 tg_bot_token=
 #telegram代理url(大陆地区服务器可使用一台国外服务器做反代tg的url)，如果运行的本来就是境外服务器，则无需填写
 tg_proxy=
-#管理员userid
+#管理员userid，关注@userinfobot 输入/satar 获取tg的userid。------------必填！！！！-------------
 tg_manage=
 
-#api接口认证token(用于发起交易的签名认证，请勿外泄)
+#api接口认证token(用于发起交易的签名认证，请勿外泄) 。自己设置一个通讯的密钥------------必填！！！！-------------
 api_auth_token=
 
 #订单过期时间(单位分钟)
 order_expiration_time=10
 
-#强制汇率(设置此参数后每笔交易将按照此汇率计算，例如:6.4)
+#强制汇率(设置此参数后每笔交易将按照此汇率计算，例如:6.4) 。------------必填！！！！-------------
 forced_usdt_rate=
 ```
 4. ⚠️注意：配置文件里面不认识的不要修改，留空即可，不会改又要瞎改，除非你对项目源代码很熟悉很有信心😁
