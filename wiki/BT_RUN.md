@@ -173,3 +173,4 @@ forced_usdt_rate=
 - 1.所有`.env`配置文件有了修改后都需要重启supervisor进程
 - 2.教程所示的目录均为参考，请勿1:1照抄，根据自己实际情况来
 - 3.`windows`与`linux`不同，`windows`请直接运行`epusdt.exe`即可，无需赋予执行权限
+- 4.平台设置接口的时候， 通常调用地址为：收银台地址后面加上/api/v1/order/create-transaction
